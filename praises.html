@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>For My Love</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+ 
+<body>
+
+    <h2>Wanna listen to how i feel when i see you?</h2>
+    <h1><center>👇🏻</center></h1>
+     <br>
+    <audio id="loveSong" loop>
+        <source src="wannabeyours.mp3" type="audio/mpeg"> <!-- Replace with your song file -->
+        Your browser does not support the audio element.
+    </audio>
+
+    <button id="playButton" class="button">Click to Play </button>
+
+    <div class="praises-page">
+       
+        <div class="praise"> <h3>Whenever I think about us being together, I wish I could pause time, especially during our talks. Your voice is like a beautiful song that I never want to end. I could listen to you for hours; it just makes me so happy.
+
+            When you smile or laugh, it’s like magic. Your smile is the most amazing thing, and your eyes are the most beautiful ones that i can ever see. Everything about you is perfect, from the way your hair shines to your cute cheeks and that adorable little mark on your lip. You are simply perfect.
+            
+            Just seeing your face can make my stress disappear. I dream about holding your hands, watching you sleep peacefully, and just being there to admire how wonderful you are. I want to make you breakfast, show you my love in every little way, and shower you with kisses on your cheeks, hands, and everywhere else.</h3></div>
+
+            <h2> <b>“YOU LOOK JUST LIKE A DREAM… THE PRETTIEST GIRL THAT I HAVE EVER SEEN!”</b></h2>
+
+        <a href="questions.html" class="button">Next</a>
+    </div>
+    <script>
+        const playButton = document.getElementById('playButton');
+        const loveSong = document.getElementById('loveSong');
+
+        playButton.addEventListener('click', function() {
+            if (loveSong.paused) {
+                loveSong.play();
+                playButton.textContent = 'Pause';
+            } else {
+                loveSong.pause();
+                playButton.textContent = 'Play';
+            }
+        });
+    </script>
+</body>
+</html>

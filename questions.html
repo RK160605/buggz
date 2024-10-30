@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>For My Love</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+<body>
+    <div class="questions-page">
+        <h2>Let's Play a Little Game! You have to guess the answers to these questions</h2>
+        <div class="question">
+            <p>What's my favorite memory with you?</p>
+            <button onclick="revealAnswer(this)">Reveal Answer</button>
+            <p class="answer">Sleeping on your Shoulder.</p>
+        </div>
+        <div class="question">
+            <p>What do I love most about you?</p>
+            <button onclick="revealAnswer(this)">Reveal Answer</button>
+            <p class="answer">Everything</p>
+        </div>
+        <div class="question">
+            <p>What do i find the cutest thing about you?</p>
+            <button onclick="revealAnswer(this)">Reveal Answer</button>
+            <p class="answer">Your Nose</p>
+        </div>
+        <a href="gallery.html" class="button">Next</a>
+    </div>
+
+    <script>
+        function revealAnswer(button) {
+            button.nextElementSibling.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
